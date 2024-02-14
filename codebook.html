@@ -1,0 +1,118 @@
+<h1>Codebook for Copy-the-Ingroup</h1>
+
+<h2>Authors</h2>
+Marcel Montrey & Thomas R. Shultz
+
+<h2>Description</h2>
+This codebook describes the format and interpretation of the variables in the attached data.
+
+<h2>Files</h2>
+<h3><u>exp1-raw-full.tsv</u></h3>
+Contains the raw data from experiment 1. Analysis was not performed on these files directly.
+<ul>
+	<li><b>subject</b>: Participant ID (indexed from 0). No IDs are assigned to those excluded from the analysis (the first generation).</li>
+	<li><b>chain</b>: Transmission chain ID (indexed from 0).</li>
+	<li><b>generation</b>: Experimental generation (indexed from 0).</li>
+	<li><b>index</b>: Participant's index within their chain/generation (indexed from 0).</li>
+	<li><b>age</b>: Age (in years).</li>
+	<li><b>sex</b>: Sex (Male or Female).</li>
+	<li><b>group</b>: Assigned group (0 or 1).</li>
+	<li><b>rabbit</b>: Nest the rabbit inhabits (0 or 1), across 20 rounds.</li>
+	<li><b>machine</b>: Nest the rabbit-finding machine would indicate as the correct one (0 or 1), if the machine was used.</li>
+	<li><b>scores</b>: Previous generation's scores after each block of five rounds. Individuals' scores are delimited by commas and blocks are delimited by semi-colons. Values of -1 indicate that no score was observed.</li>
+	<li><b>pre</b>: Pre-game rating of the ingroup's relative reliability.</li>
+	<li><b>post</b>: Post-game rating of the ingroup's relative reliability.</li>
+	<li><b>chosen</b>: Each observed individual's index within their chain/generation (0 to 5). Indices are delimited by commas and rounds are delimited by semi-colons. Values of -1 indicate that no one was observed.</li>
+	<li><b>chosenInput</b>: Nest selected by each observed individual (0 or 1). Guesses are delimited by commas and rounds are delimited by semi-colons. Values of -1 indicate that no one was observed.</li>
+	<li><b>useMachine</b>: Whether the participant chose to use the rabbit-finding machine (0 or 1), across 20 rounds.</li>
+	<li><b>output</b>: Participant's guesses about which nest the rabbit inhabits (0 or 1), across 20 rounds.</li>
+	<li><b>score</b>: Participant's score, across 20 rounds.</li>
+	<li><b>gameTime</b>: Time spent completing each round (in seconds).</li>
+	<li><b>IP_Hub_Country_Code</b>: IP address' country of origin, according to IP Hub.</li>
+	<li><b>IP_Hub_ISP</b>: IP address' ISP, according to IP Hub.</li>
+	<li><b>IP_Hub_nonUSIP</b>: Whether this IP address originates from outside the U.S., according to IP Hub.</li>
+	<li><b>IP_Hub_VPS</b>: Whether this IP address originates from a VPS, according to IP Hub.</li>
+	<li><b>IP_Hub_recommend_block</b>: Whether this IP address originates from outside the U.S. or from a VPS, according to IP Hub.</li>
+</ul>
+
+<h3><u>exp2-raw-full.tsv</u></h3>
+Contains the raw data from experiment 2. Analysis was not performed on these files directly.
+<ul>
+	<li><b>subject</b>, <b>generation</b>, <b>index</b>, <b>age</b>, <b>sex</b>, <b>group</b>, <b>rabbit</b>, <b>machine</b>, <b>scores</b>, <b>chosen</b>, <b>chosenInput</b>, <b>useMachine</b>, <b>output</b>, <b>score</b>, and <b>gameTime</b> are the same as in <u>exp1-raw-data.tsv</u>.</li>
+	<li><b>condition</b>: Condition ID (indexed from 0).</li>
+	<li><b>pre</b>: Pre-game ratings of the ingroup's competence, capability, warmth, and friendliness, followed by the outgroup's competence, capability, warmth, and friendliness.</li>
+	<li><b>post</b>: Post-game ratings, in the same order.</li>
+	<li><b>surveyTime</b>: Time spent completing the pre-game and post-game group stereotype questionnaires (in seconds).</li>
+</ul>
+
+<h3><u>exp1-wide.tsv</u></h3>
+Contains the processed data from experiment 1 in wide format.
+<ul>
+	<li><b>subject</b>, <b>chain</b>, <b>generation</b>, <b>age</b>, <b>sex</b>, <b>group</b>, <b>pre</b>, <b>post</b>, <b>IP_Hub_Country_Code</b>, <b>IP_Hub_ISP</b>, <b>IP_Hub_nonUSIP</b>, <b>IP_Hub_VPS</b>, and <b>IP_Hub_recommend_block</b> are the same as in <u>exp1-raw-data.tsv</u>.</li>
+	<li><b>totalGameTime</b>: Total time spent playing the game (in seconds).</li>
+	<li><b>finalScore</b>: Final score (in points).</li>
+	<li><b>il</b>: Number of times the participant used the rabbit-finding machine (individual learning).</li>
+	<li><b>agreeIG</b>: Number of agreements with ingroup members.</li>
+	<li><b>agreeOG</b>: Number of agreements with outgroup members.</li>
+	<li><b>agreeTotal</b>: Total number of agreements (ingroup plus outgroup)</li>
+	<li><b>agreeBias</b>: Which group was copied more often (ingroup bias, outgroup bias, or unbiased).</li>
+	<li><b>agreeMaxIG</b>: Number of opportunities the participant had to agree with the ingroup, given whom they observed.</li>
+	<li><b>agreeMaxOG</b>: Number of opportunities the participant had to agree with the outgroup, given whom they observed.</li>
+	<li><b>obsIG</b>: Number of observations of ingroup members.</li>
+	<li><b>obsOG</b>: Number of observations of outgroup members.</li>
+	<li><b>obsTotal</b>: Total number of observations (ingroup plus outgroup).</li>
+	<li><b>obsBias</b>: Which group was observed more often (ingroup bias, outgroup bias, or unbiased).</li>
+	<li><b>hammingIG</b>: Total Hamming distance from ingroup members in the previous generation.</li>
+	<li><b>hammingOG</b>: Total Hamming distance from outgroup members in the previous generation.</li>
+	<li><b>hammingDelta</b>: Difference in Hamming distance from ingroup and outgroup members (ingroup minus outgroup).</li>
+</ul>
+
+<h3><u>exp1-wide-full.tsv</u></h3>
+Identical to <u>exp1-wide.tsv</u>, except it also includes data from participants who were excluded from the analysis (the first generation).
+
+<h3><u>exp2-wide.tsv</u></h3>
+Contains the processed data from experiment 2 in wide format.
+<ul>
+	<li><b>subject</b>, <b>generation</b>, <b>age</b>, <b>sex</b>, <b>group</b>, <b>totalGameTime</b>, <b>finalScore</b>, <b>il</b>, <b>agreeIG</b>, <b>agreeOG</b>, <b>agreeTotal</b>, <b>agreeBias</b>, <b>agreeMaxIG</b>, <b>agreeMaxOG</b>, <b>obsIG</b>, <b>obsOG</b>, <b>obsTotal</b>, <b>obsBias</b>, <b>hammingIG</b>, <b>hammingOG</b>, and <b>hammingDelta</b> are the same as in <u>exp1-wide.tsv</u>.</li>
+	<li><b>condition</b> is the same as in <u>exp2-raw-full.tsv</u>.</li>
+	<li><b>models</b>: Number of individuals observed per round (behavioral models).</li>
+	<li><b>preCompIG</b>: Pre-game competence rating of the ingroup (average of "competence" and "capability").</li>
+	<li><b>preCompOG</b>: Pre-game competence rating of the outgroup.</li>
+	<li><b>preCompDelta</b>: Difference between the groups' pre-game competence ratings (ingroup minus outgroup).</li>
+	<li><b>preCompBias</b>: Which group the pre-game competence rating favors (ingroup bias, outgroup bias, or unbiased).</li>
+	<li><b>preWarmIG</b>: Pre-game warmth rating of the ingroup (average of "warmth" and "friendliness").</li>
+	<li><b>preWarmOG</b>: Pre-game warmth rating of the outgroup.</li>
+	<li><b>preWarmDelta</b>: Difference between the groups' pre-game warmth ratings.</li>
+	<li><b>preWarmBias</b>: Which group the pre-game warmth rating favors.</li>
+	<li><b>postCompIG</b>: Post-game competence rating of the ingroup.</li>
+	<li><b>postCompOG</b>: Post-game competence rating of the outgroup.</li>
+	<li><b>postCompDelta</b>: Difference between the groups' post-game competence ratings.</li>
+	<li><b>postCompBias</b>: Which group the post-game competence rating favors.</li>
+	<li><b>postWarmIG</b>: Post-game warmth rating of the ingroup.</li>
+	<li><b>postWarmOG</b>: Post-game warmth rating of the outgroup.</li>
+	<li><b>postWarmDelta</b>: Difference between the groups' post-game warmth ratings.</li>
+	<li><b>postWarmBias</b>: Which group the post-game warmth rating favors.</li>
+	<li><b>compDelta</b>: Change in the ingroup competence bias (delta) over the course of the game (post-game bias minus pre-game bias).</li>
+	<li><b>warmDelta</b>: Change in the ingroup warmth bias (delta) over the course of the game.</li>
+</ul>
+
+<h3><u>exp2-wide-full.tsv</u></h3>
+Identical to <u>exp2-wide.tsv</u>, except it also includes data from participants who were excluded from the analysis (the first generation).
+
+<h3><u>exp1-long.tsv</u></h3>
+Contains the processed data from experiment 1 in long format (i.e., one entry for behavior toward the ingroup and one entry for behavior toward the outgroup).
+<ul>
+	<li><b>subject</b>, <b>chain</b>, <b>generation</b>, <b>pre</b>, <b>post</b>, <b>agreeTotal</b>, <b>agreeBias</b>, <b>obsTotal</b>, <b>obsBias</b>, and <b>IP_Hub_recommend_block</b> are the same as in <u>exp1-wide.tsv</u>.</li>
+	<li><b>group</b>: Group in question (ingroup or outgroup).</li>
+	<li><b>agree</b>: Number of agreements with this group's members.</li>
+	<li><b>agreeMax</b>: Number of opportunities the participant had to agree with this group's members, given whom they observed.</li>
+	<li><b>obs</b>: Number of observations of this group's members.</li>
+	<li><b>hamming</b>: Total Hamming distance from this group's members in the previous generation.</li>
+</ul>
+
+<h3><u>exp2-long.tsv</u></h3>
+Contains the processed data from experiment 2 in long format (i.e., one entry for behavior toward the ingroup and one entry for behavior toward the outgroup).
+<ul>
+	<li><b>subject</b>, <b>generation</b>, <b>group</b>, <b>agree</b>, <b>agreeTotal</b>, <b>agreeBias</b>, <b>agreeMax</b>, <b>obs</b>, <b>obsTotal</b>, <b>obsBias</b>, and <b>hamming</b> are the same as in <u>exp1-long.tsv</u>.</li>
+	<li><b>models</b>, <b>preCompDelta</b>, <b>preCompBias</b>, <b>preWarmDelta</b>, <b>preWarmBias</b>, <b>postCompDelta</b>, <b>postCompBias</b>, <b>postWarmDelta</b> and <b>postWarmBias</b> are the same as in <u>exp2-wide.tsv</u>.
+</ul>
