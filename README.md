@@ -1,7 +1,6 @@
 # Description
 Human data and analysis code from psychological study examining humans' preference for copying members of the same arbitrary social group. These data and analyses were reported in the following journal publication:
-
-Montrey, M., & Shultz, T. R. (2022). Copy the In-group: Group Membership Trumps Perceived Reliability, Warmth, and Competence in a Social-Learning Task. *Psychological Science, 33*(1), 165-174. https://doi.org/10.1177/09567976211032224
+> Montrey, M., & Shultz, T. R. (2022). Copy the In-group: Group Membership Trumps Perceived Reliability, Warmth, and Competence in a Social-Learning Task. *Psychological Science, 33*(1), 165-174. https://doi.org/10.1177/09567976211032224
 
 In accordance with open data practices, these have also been made publicly available via OSF:
 https://doi.org/10.17605/OSF.IO/Z6D7J
