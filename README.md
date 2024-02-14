@@ -15,7 +15,7 @@ Surprisingly little is known about how social groups influence social learning. 
 Experimental data are distributed across several `.tsv` files. The codebook for these data is found in `codebook.html`. The R code used to analyze these data is found in `analyses.R`.
 
 # License
-Distributed under the MIT License. See LICENSE.txt for more information.
+Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 # Contact
 Marcel Montrey - marcel.montrey@gmail.com
